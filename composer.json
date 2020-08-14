@@ -1,0 +1,13 @@
+{
+    "name": "basarballioz/ltsbilisim",
+    "description": "web project",
+    "authors": [
+        {
+            "name": "Başar Ballıöz",
+            "email": "balliozbasar@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/installer": "^3.2"
+    }
+}

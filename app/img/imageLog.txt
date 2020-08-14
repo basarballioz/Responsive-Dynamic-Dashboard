@@ -1,0 +1,36 @@
+
+User: kadir
+User id: 32
+User added his profile photo 
+image name: cat.jpg
+image text: 
+image id: 32
+User id and photo id matches
+
+User: kadir
+User id: 32
+User has deleted his profile picture
+
+User: kadir
+User id: 32
+User added his profile photo 
+image name: cat.jpg
+image text: 
+image id: 32
+User id and photo id matches
+
+User: kadir
+User id: 32
+User has updated his photo 
+image name: Dhaulagiri_mountain.jpg
+image text: 
+image id: 32
+User id and photo id matches
+
+User: kadir
+User id: 32
+User has updated his photo 
+image name: Dhaulagiri_mountain.jpg
+image text: 
+image id: 32
+User id and photo id matches

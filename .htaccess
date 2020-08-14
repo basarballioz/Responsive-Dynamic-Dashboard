@@ -1,0 +1,24 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9-_/]+)$ index.php [QSA]
+
+ErrorDocument 400 http://login/
+ErrorDocument 401 http://login/
+ErrorDocument 402 http://login/
+ErrorDocument 403 http://login/
+ErrorDocument 404 http://login/
+ErrorDocument 405 http://login/
+ErrorDocument 406 http://login/
+ErrorDocument 407 http://login/
+ErrorDocument 408 http://login/
+ErrorDocument 409 http://login/
+ErrorDocument 410 http://login/
+ErrorDocument 411 http://login/
+ErrorDocument 412 http://login/
+ErrorDocument 413 http://login/
+ErrorDocument 414 http://login/
+ErrorDocument 500 http://login/
+ErrorDocument 501 http://login/
+ErrorDocument 502 http://login/
+ErrorDocument 503 http://login/
+ErrorDocument 504 http://login/
+ErrorDocument 505 http://login/
