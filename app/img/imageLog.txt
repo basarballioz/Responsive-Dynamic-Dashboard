@@ -610,3 +610,27 @@ image name: mountain.jpg
 image text: 
 image id: 32
 User id and photo id matches
+
+User: omur
+User id: 29
+User added his profile photo 
+image name: mountain.jpg
+image text: 
+image id: 29
+User id and photo id matches
+
+User: omur
+User id: 29
+User has updated his photo 
+image name: mountain.jpg
+image text: 
+image id: 29
+User id and photo id matches
+
+User: omur
+User id: 29
+User has updated his photo 
+image name: mountain.jpg
+image text: 
+image id: 29
+User id and photo id matches
