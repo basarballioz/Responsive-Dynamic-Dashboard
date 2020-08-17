@@ -7,7 +7,7 @@
     $imageQuery = $database->prepare("SELECT * FROM profilephoto WHERE id = $imageId");
     $imageQuery->execute();
     $imageResult = $imageQuery->fetch(\PDO::FETCH_ASSOC);
-    @$profilePicture = "<img src='../img/" .$imageResult['image']. "' height=80 width=80 style='border-radius: 50%;'>";
+    @$profilePicture = "<img src='../img/" . $imageResult['image']. "' height=80 width=80 style='border-radius: 50%;'>";
 ?>
 
 <!--ASIDE-->

@@ -27,10 +27,12 @@ if (isset($_POST['delete'])) {
 
 $msg = "";
 if (isset($_POST['upload'])) {
-    $target = "../../app/img/" . basename($_FILES['image']['name']);
-
-    $image = $_FILES['image']['name'];
+    $target = "../../app/img/" . basename($photoId . "-" . $_FILES['image']['name']);
     $text = $_POST['text'];
+
+    //TEST
+    $image = $_FILES['image']['name'];
+    $newImage = $photoId . "-" . $image;
 
     $file_type = $_FILES['image']['type'];
     $allowed = array("image/jpeg", "image/gif", "image/png", "image/jpg");
@@ -43,7 +45,7 @@ if (isset($_POST['upload'])) {
             echo "File size exceeds maximum.";
         } else {
             if (isset($photoResult['image'])) {
-                $updateImage = $database->prepare("UPDATE profilePhoto SET image = '$image', text = '$text' WHERE id = '$photoId'");
+                $updateImage = $database->prepare("UPDATE profilePhoto SET image = '$newImage', text = '$text' WHERE id = '$photoId'");
                 $updateImage->execute();
                 $userHasUpdated = "\nUser has updated his photo " . "\nimage name: " . $image . "\nimage text: " . $text . "\nimage id: " . $photoId . "\r\n";
                 fwrite($imageLog, $text1);
@@ -60,7 +62,7 @@ if (isset($_POST['upload'])) {
                     fclose($imageLog);
                 }
             } else {
-                $addImage = $database->prepare("INSERT INTO profilephoto (id, image, text) VALUES ('$photoId', '$image', '$text')");
+                $addImage = $database->prepare("INSERT INTO profilephoto (id, image, text) VALUES ('$photoId', '$newImage', '$text')");
                 $addImage->execute();
                 $userAddedPhoto = "\nUser added his profile photo " . "\nimage name: " . $image . "\nimage text: " . $text . "\nimage id: " . $photoId . "\r\n";;
                 fwrite($imageLog, $text1);
